@@ -2,7 +2,7 @@
 window.onload = function() {
 
   var searchThis =  [ $("#userInput").val(''),
-                      $(this).data() ]
+                      $(this).data('search') ]
 
 
   var queryURL = "https://developer.nps.gov/api/v1/parks?=stateCode=" + searchThis + "&api_key=7wQNlZMqMhlH0js2AdSZsiMoge4n3Z0ud2rZVlfW"
