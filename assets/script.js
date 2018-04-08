@@ -2,8 +2,10 @@
 window.onload = function() {
    
   var x = $(this).val("nc");
+  
   var queryURL = "https://developer.nps.gov/api/v1/parks?=stateCode=" + x + "&api_key=7wQNlZMqMhlH0js2AdSZsiMoge4n3Z0ud2rZVlfW"
-$.ajax({
+
+    $.ajax({
             url: queryURL,
             method: "GET"
           
