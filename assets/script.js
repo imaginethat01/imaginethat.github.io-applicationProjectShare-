@@ -1,19 +1,8 @@
 
 window.onload = function() {
    
-  
-  $('.grid').packery({
-    // options
-    itemSelector: '.grid-item',
-    gutter: 10
-  });
-
-  
-};
-
-
-var x = $(this).val("nc");
- var queryURL = "https://developer.nps.gov/api/v1/parks?=stateCode=" + x + "&api_key=7wQNlZMqMhlH0js2AdSZsiMoge4n3Z0ud2rZVlfW"
+  var x = $(this).val("nc");
+  var queryURL = "https://developer.nps.gov/api/v1/parks?=stateCode=" + x + "&api_key=7wQNlZMqMhlH0js2AdSZsiMoge4n3Z0ud2rZVlfW"
 $.ajax({
             url: queryURL,
             method: "GET"
@@ -25,3 +14,58 @@ $.ajax({
             for (var i = 0; i < results.length; i++) {
             var displayDiv = $("<div class='col-md-4'>"); }
           });
+
+
+
+          var config = {
+            apiKey: "AIzaSyCKZfkPIfQAelCisqxhuniO9zhmCRn0VOw",
+            authDomain: "contactformdb.firebaseapp.com",
+            databaseURL: "https://contactformdb.firebaseio.com",
+            projectId: "contactformdb",
+            storageBucket: "",
+            messagingSenderId: "691050789317"
+          };
+          firebase.initializeApp(config);
+          
+          
+              // Create a variable to reference the database.
+              var database = firebase.database();
+              // Initial Values
+              var name = "";
+              var email = "";
+              var password1 = "";
+              var password2 = "";
+              var birthDate = "";
+              // Capture Button Click
+              $("#submitGo").on("click", function(event) {
+                event.preventDefault();
+                // Grabbed values from text boxes
+                name = $("#firstName").val().trim();
+                email = $("#email").val().trim();
+                password1 = $("#password1").val().trim();
+                password2 = $("#password2").val().trim();
+                birthDate = $("#birthDate").val().trim(); 
+                // Code for handling the push
+                database.ref().push({
+                  name: name,
+                  email: email,
+                  password1: password1,
+                  password2: password2,
+                  birthDate: birthDate,
+                  dateAdded: firebase.database.ServerValue.TIMESTAMP
+                });
+              });
+
+
+  $('.grid').packery({
+    // options
+    itemSelector: '.grid-item',
+    gutter: 10
+  });
+
+  
+};
+
+
+
+   
