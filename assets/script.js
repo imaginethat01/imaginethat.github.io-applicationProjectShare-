@@ -1,9 +1,11 @@
 
 window.onload = function() {
-   
-  var x = $(this).val("nc");
-  
-  var queryURL = "https://developer.nps.gov/api/v1/parks?=stateCode=" + x + "&api_key=7wQNlZMqMhlH0js2AdSZsiMoge4n3Z0ud2rZVlfW"
+
+  var searchThis =  [ $("#userInput").val(''),
+                      $(this).data() ]
+
+
+  var queryURL = "https://developer.nps.gov/api/v1/parks?=stateCode=" + searchThis + "&api_key=7wQNlZMqMhlH0js2AdSZsiMoge4n3Z0ud2rZVlfW"
 
     $.ajax({
             url: queryURL,
@@ -39,7 +41,7 @@ window.onload = function() {
               var password2 = "";
               var birthDate = "";
               // Capture Button Click
-              $("#submitGo").on("click", function(event) {
+              $("#submitGoFire").on("click", function(event) {
                 event.preventDefault();
                 // Grabbed values from text boxes
                 name = $("#firstName").val().trim();
@@ -68,6 +70,10 @@ window.onload = function() {
   
 };
 
-
+$("#submitBtn").on("click", function(event) {
+  event.preventDefault();
+  
+    
+    });
 
    
