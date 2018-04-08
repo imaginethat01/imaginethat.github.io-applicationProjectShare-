@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+    crossorigin="anonymous">
+
+    <link rel= "stylesheet" src="assets/style.css">
+    <script src="https://unpkg.com/packery@2/dist/packery.pkgd.min.js"></script>     
+    <script src="assets/packery.pkgd.min.js"></script> 
+    <script src="assets/script.js"></script>
+
+<title>Document</title>
+</head>
+
+
+<body>
+
+        <h2 style="text-align: center;">NPS Connect</h2>
+        <HR>
+        <h2 style="text-align: center;">Search</h2>
+        
+     <div class="container">
+     <div class="row">
+     <div class="col-sm-3"></div>
+     <div class="col-sm-6">
+                      
+    <!-- HEADER LOGO & TEXT -->
+    <nav class="navbar navbar-light bg-clear">
+    <a class="navbar-brand" href="#"></a>
+    </nav>
+                
+    <nav class="navbar navbar-light bg-light">
+    <form class="form-inline">
+    <input class="form-control mr-sm-2" type="search" placeholder="Type Park Here" aria-label="Search">
+    <button class="btn btn-outline-success my-2 my-sm-0" id="submitBtn" type="submit">Search
+    </button></form></nav>
+
+                
+    </div></div>
+    </div></div>
+
+  
+
+    <div class="container">                        
+    <div class="row">
+    <div class="col-sm-3"></div>    
+    <div class="col-sm-6">
+
+
+            <div class="grid" data-packery='{ "itemSelector": ".grid-item" }'>
+            <div class="grid-item"><img class="block1"  src="assets/images/greensquare1.png">
+            <div class="grid-item"><img class="block2"  src="assets/images/bluesquare1.png">               
+</div></div>   
+</div></div>
+</div></div>
+<br>
+<div class="container">
+<div class="row">
+<div class="col-sm-3"></div>
+<div class="col-sm-6">
+
+<iframe width="550px;" height="325px;"
+frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCESN4bg_XY8N82CwU7ssef7snFR53K1rY
+ &q=Space+Needle,Seattle+WA" allowfullscreen>
+</iframe>
+
+</div></div></div>
+<br>
+<div class="container">
+<div class="row">
+<div class="col-sm-3"></div>
+    <div class="col-sm-6">
+    <div class="form-group">
+    <label for="parks" class="col-sm-6 control-label" style="text-align: center;">Browse Parks</label>    
+    <select id="state" class="form-control">
+            <option>Acadia</option>
+            <option>American Samoa</option>
+            <option>Arches</option>
+            <option>Badlands</option>
+            <option>Big Bend</option>
+            <option>Biscayne</option>
+            <option>Black Canyon of the Gunnison</option>
+            <option>Bryce Canyon</option>
+            <option>Canyonlands</option>
+            <option>Capitol Reef</option>
+            <option>Carlsbad Caverns *</option>
+            <option>Channel Islands</option>
+            <option>Congaree</option>
+            <option>Crater Lake</option>
+            <option>Cuyahoga Valley</option>
+            <option>Death Valley</option>
+            <option>Denali</option>
+            <option>Dry Tortugas</option>
+            <option>Everglades</option>
+            <option>Gates of the Arctic</option>
+            <option>Gateway Arch</option>
+            <option>Glacier</option>
+            <option>Glacier Bay</option>
+            <option>Grand Canyon *</option>
+            <option>Grand Teton</option>
+            <option>Great Basin</option>
+            <option>Great Sand Dunes</option>
+            <option>Great Smoky Mountains</option>
+            <option>Guadalupe Mountains</option>
+            <option>Haleakalā</option>
+            <option>Hawaiʻi Volcanoes</option>
+            <option>Hot Springs</option>
+            <option>Isle Royale</option>
+            <option>Joshua Tree</option>
+            <option>Katmai</option>
+            <option>Kenai Fjords</option>
+            <option>Kings Canyon</option>
+            <option>Kobuk Valley</option>
+            <option>Lake Clark</option>
+            <option>Lassen Volcanic</option>
+            <option>Mammoth Cave</option>
+            <option>Mesa Verde*</option>
+            <option>Mount Rainier</option>
+            <option>North Cascades</option>
+            <option>Olympic</option>
+            <option>Petrified Forest</option>
+            <option>Pinnacles</option>
+            <option>Redwood *</option>
+            <option>Rocky Mountain</option>
+            <option>Saguaro</option>
+            <option>Sequoia</option>
+            <option>Shenandoah</option>
+            <option>Theodore Roosevelt</option>
+            <option>Virgin Islands</option>
+            <option>Voyageurs</option>
+            <option>Wind Cave</option>
+            <option>Wrangell–St. Elias *</option>
+            <option>Yellowstone</option>
+            <option>Yosemite *</option>
+            <option>Zion</option>
+
+    </select>
+    </div></div></div> <!-- /.form-group -->
+
+
+<!-- REGISTRATION FORM - INCASE WE DECIDE TO USE IT -->
+
+<div class="container">
+<div class="row">
+<div class="col-sm-3"></div>
+<div class="col-sm-6">
+
+<form class="form-horizontal" role="form" id="formWrapper">
+
+        <div class="form-group">
+            <label for="firstName" class="col-sm-3 control-label">Full Name</label>
+            <input type="text" id="firstName" placeholder="Full Name" class="form-control" autofocus>
+            </div>
+          
+        <div class="form-group">
+            <label for="email" class="col-sm-3 control-label">Email</label>
+            <input type="email" id="email" placeholder="Email" class="form-control">
+            </div>
+           
+        <div class="form-group">
+            <label for="password1" class="col-sm-3 control-label">Password</label>
+            <input type="password" id="password1" placeholder="Password" class="form-control">
+            </div>
+         
+        <div class="form-group">
+          <label for="password2" class="col-sm-3 control-label">Re-enter Password</label>
+            <input type="password" id="password2" placeholder="Password" class="form-control">
+            </div>
+         
+        <div class="form-group">
+            <label for="birthDate" class="col-sm-3 control-label">Date of Birth</label>
+            <input type="date" id="birthDate" class="form-control">
+            </div>
+         
+         </form></div>
+         </div></div>
+
+        <div class="row">
+        <div class="col-sm-3"></div>
+        <div class="col-sm-6">
+        <div class="form-group">
+        
+        <input type="checkbox"> I accept <a href="#">terms</a>
+        <button type="submit" class="btn btn-primary btn-block">Register</button>
+        <button type="submit" class="btn btn-primary btn-block">Pick A Random Park</button>
+        </div></form>
+        </div> 
+
+
+     
+  <!-- FOOTER -->
+<div class="container">
+  <div class="row">
+  <div class="col-sm-3"></div>    
+  <div class="col-sm-9">
+  <footer id="footer">
+  &copy; 2018 Team JSON & The VARgonauts UNC Coding Bootcamp
+ </footer></div>
+ </div></div>
+
+<br> 
+</body>
+</html>
